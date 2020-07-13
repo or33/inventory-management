@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addItem.AddItemController">
+    <stylesheets>
+        <URL value="@additem.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="163.0" layoutY="28.0" text="Add Item">
+               <font>
+                  <Font name="Dubai Light" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBatchNumber" layoutX="142.0" layoutY="116.0" prefHeight="35.0" prefWidth="212.0">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtItemName" layoutX="142.0" layoutY="246.0" prefHeight="35.0" prefWidth="212.0">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUnitPrice" layoutX="142.0" layoutY="313.0" prefHeight="35.0" prefWidth="212.0">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtItemQuan" layoutX="142.0" layoutY="377.0" prefHeight="35.0" prefWidth="212.0">
+               <font>
+                  <Font name="Dubai Regular" size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="dateDate" layoutX="142.0" layoutY="443.0" prefHeight="35.0" prefWidth="212.0" />
+            <Label layoutX="27.0" layoutY="123.0" prefHeight="17.0" prefWidth="95.0" text="Batch Number:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="186.0" prefHeight="17.0" prefWidth="95.0" text="Item Type:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="251.0" prefHeight="17.0" prefWidth="95.0" text="Item Name:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="318.0" prefHeight="17.0" prefWidth="95.0" text="Unit Price:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="382.0" prefHeight="17.0" prefWidth="95.0" text="Item Quantity:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="448.0" prefHeight="17.0" prefWidth="95.0" text="Date of Log:">
+               <font>
+                  <Font name="Dubai Light" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboItemType" layoutX="140.0" layoutY="186.0" prefHeight="30.0" prefWidth="219.0" promptText="Select Type" style="-fx-font-family: Dubai LIght;" />
+            <Button fx:id="btnSave" layoutX="163.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="41.0" prefWidth="112.0" text="Save">
+               <font>
+                  <Font name="Dubai Light" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
